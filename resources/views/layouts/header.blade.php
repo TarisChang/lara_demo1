@@ -45,8 +45,8 @@
                         <div class="sub" style="display:none">
                             <dl>
                                 <dd><a href="{{ route('about') }}">企業簡介</a></dd>
-                                <dd><a href="FaZhanLiCheng.html">發展歷程</a></dd>
-                                <dd><a href="QiYeWenHua.html">企業文化</a></dd>
+                                <dd><a href="{{ route('history') }}">發展歷程</a></dd>
+                                <dd><a href="{{ route('culture') }}">企業文化</a></dd>
                                 <dd><a href="QiYeRongYu.html">企業榮譽</a></dd>
                                 <dd><a href="XinWenDongTai.html">新聞動態</a></dd>
                                 <dd><a href="ZhaoXianNaShi.html">招賢納士</a></dd>
@@ -135,8 +135,8 @@
                     <li><a href="javascript:;"><span>關於我們</span><i class="touch-arrow-down"></i> </a>
                         <ul>
                             <li><a href="{{ route('about') }}"><span>企業簡介</span></a></li>
-                            <li><a href="FaZhanLiCheng.html"><span>發展歷程</span></a></li>
-                            <li><a href="QiYeWenHua.html"><span>企業文化</span></a></li>
+                            <li><a href="{{ route('history') }}"><span>發展歷程</span></a></li>
+                            <li><a href="{{ route('culture') }}"><span>企業文化</span></a></li>
                             <li><a href="QiYeRongYu.html"><span>企業榮譽</span></a></li>
                             <li><a href="XinWenDongTai.html"><span>新聞動態</span></a></li>
                             <li><a href="ZhaoXianNaShi.html"><span>招賢納士</span></a></li>

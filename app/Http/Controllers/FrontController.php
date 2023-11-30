@@ -16,6 +16,16 @@ class FrontController extends Controller
         return view("about");
     }
 
+    function history()
+    {
+        return view("history");
+    }
+
+    function culture()
+    {
+        return view("culture");
+    }
+
     function contact()
     {
         return view("contact");

@@ -1,5 +1,5 @@
 ﻿@extends('layouts.app')
-@section('title', '聯絡我們')
+@section('title', '產品名稱')
 @section('main')
 <!--正文begin-->
 <div class="pro_one anim anim-1">
