@@ -11,7 +11,13 @@ Route::group([
     'namespace'  => config('admin.route.namespace'),
     'middleware' => config('admin.route.middleware'),
 ], function (Router $router) {
-
     $router->get('/', 'HomeController@index');
+    $router->resource('about', 'AboutController');
+    $router->resource('banner', 'BannerController');
+    $router->resource('news', 'NewsController');
+    $router->resource('product', 'ProductController');
+    $router->resource('join', 'JoinController');
 
+    $router->get('settings', 'SettingController@index');
+    $router->get('contact', 'ContactController@index');
 });
