@@ -149,7 +149,7 @@ return [
         ],
 
         // Add "remember me" to login form
-        'remember' => true,
+        'remember' => false,
 
         // All method to path like: auth/users/*/edit
         // or specific method to path like: get:auth/users.
@@ -200,7 +200,7 @@ return [
     |--------------------------------------------------------------------------
     */
     'helpers' => [
-        'enable' => true,
+        'enable' => env('ADMIN_HELPER', true),
     ],
 
     /*
