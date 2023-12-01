@@ -2,6 +2,7 @@
 
 namespace App\Admin\Controllers;
 
+use App\Admin\Forms\About;
 use Dcat\Admin\Layout\Content;
 use App\Admin\Forms\Setting;
 use App\Admin\Forms\Terms;
@@ -18,10 +19,10 @@ class SettingController extends AdminController
             ->body(new Card(new Setting()));
     }
 
-    public function terms(Content $content)
+    public function about(Content $content)
     {
-        return $content->header('報名須知') // 標題
+        return $content->header('關於我們') // 標題
             ->description('修改')
-            ->body(new Card(new Terms()));
+            ->body(new Card(new About()));
     }
 }
