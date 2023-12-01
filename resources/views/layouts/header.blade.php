@@ -37,23 +37,21 @@
         <div class="top-main-content"><!-- S nav -->
             <div class="navBar">
                 <ul class="nav clearfix">
-                    <li id="m1" class="m on">
+                    <li id="m1" class="m {{ request()->route()->getName() == 'home'? 'on': '' }}">
                         <h3><a href="{{ route('home') }}" title="首頁">首頁</a></h3>
                     </li>
-                    <li id="m2" class="m ">
+                    <li id="m2" class="m {{ in_array(request()->route()->getName(), ['about', 'history', 'culture', 'join']) ? 'on': '' }}">
                         <h3><a href="{{ route('about') }}" title="關於我們">關於我們</a></h3>
                         <div class="sub" style="display:none">
                             <dl>
                                 <dd><a href="{{ route('about') }}">企業簡介</a></dd>
                                 <dd><a href="{{ route('history') }}">發展歷程</a></dd>
                                 <dd><a href="{{ route('culture') }}">企業文化</a></dd>
-                                <dd><a href="QiYeRongYu.html">企業榮譽</a></dd>
-                                <dd><a href="XinWenDongTai.html">新聞動態</a></dd>
-                                <dd><a href="ZhaoXianNaShi.html">招賢納士</a></dd>
+                                <dd><a href="{{ route('join') }}">人才招募</a></dd>
                             </dl>
                         </div>
                     </li>
-                    <li id="m3" class="m ">
+                    <li id="m3" class="m {{ in_array(request()->route()->getName(), ['product', 'product.detail']) ? 'on': '' }}">
                         <h3><a href="{{ route('product') }}" title="産品與服務">産品與服務</a></h3>
                         <div class="sub" style="display:none">
                             <dl>
@@ -66,13 +64,13 @@
                             </dl>
                         </div>
                     </li>
-                    <li id="m4" class="m on">
+                    <li id="m4" class="m {{ in_array(request()->route()->getName(), ['news', 'news.detail']) ? 'on': '' }}">
                         <h3><a href="{{ route('news') }}" title="最新消息">最新消息</a></h3>
                     </li>
-                    <li id="m6" class="m ">
+                    <li id="m6" class="m {{ request()->route()->getName() == 'case'? 'on': '' }}">
                         <h3><a href="{{ route('case') }}" title="工程案例">工程案例</a></h3>
                     </li>
-                    <li id="m7" class="m ">
+                    <li id="m7" class="m {{ request()->route()->getName() == 'contact'? 'on': '' }}">
                         <h3><a href="{{ route('contact') }}" title="聯系我們">聯系我們</a></h3>
                         <div class="sub">
                             <dl></dl>
@@ -139,7 +137,7 @@
                             <li><a href="{{ route('culture') }}"><span>企業文化</span></a></li>
                             <li><a href="QiYeRongYu.html"><span>企業榮譽</span></a></li>
                             <li><a href="XinWenDongTai.html"><span>新聞動態</span></a></li>
-                            <li><a href="ZhaoXianNaShi.html"><span>招賢納士</span></a></li>
+                            <li><a href="{{ route('join') }}"><span>人才招募</span></a></li>
                         </ul>
                     </li>
                     <li> <a href="{{ route('product') }}"><span>産品與服務</span><i class="touch-arrow-down"></i> </a>

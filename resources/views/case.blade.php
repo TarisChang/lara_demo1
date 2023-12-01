@@ -1,5 +1,5 @@
 ﻿@extends('layouts.app')
-@section('title', '聯絡我們')
+@section('title', '實績案例')
 @section('main')
 <!--正文begin-->
 <div class="about_bg3">
