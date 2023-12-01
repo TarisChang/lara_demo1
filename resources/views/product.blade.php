@@ -2,7 +2,7 @@
 @section('title', '產品與服務')
 @section('main')
     <!--正文begin-->
-    <div class="o_big"><img src="/assets/picture/596583656ee90.jpg" /></div>
+    <div class="o_big"><img src="/assets/picture/product.png"/></div>
 
     <div class="product_ul anim anim-1">
         <ul>

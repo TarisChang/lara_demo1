@@ -1,5 +1,5 @@
 ﻿*{margin:0;padding:0;border:0;}
-body {background-color: #fff; overflow-x:hidden;color: #333;font-size: 12px; font-family: "微软雅黑","Microsoft YaHei", "Arial", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
+body {background-color: #fff; overflow-x:hidden;color: #333;font-size: 14px; font-family: "微软雅黑","Microsoft YaHei", "Arial", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
 a { color: #333;
   text-decoration: none;
   -webkit-transition: transform 0.3s ease, text-decoration 0.3s ease, color 0.3s, background 0.3s ease, text-indent 0.3s ease;
@@ -10,8 +10,8 @@ a:hover {color: #029bde;/*text-decoration: underline;*/}
 input,select,img{vertical-align:middle;}
 ul,li{ list-style:none;}
 em, cite, th { font-style: normal; font-weight: normal; font-style:normal;}
-.wrap{clear:both; width:96%;max-width:1200px;margin:0 auto;text-align:left;zoom:1; overflow:hidden;}
-.wrap2{clear:both; width:96%;max-width:1400px;margin:0 auto;text-align:left;zoom:1; overflow:hidden;}
+.wrap{clear:both; width:80%;max-width:1200px;margin:0 auto;text-align:left;zoom:1; overflow:hidden;}
+.wrap2{clear:both; width:80%;max-width:1400px;margin:0 auto;text-align:left;zoom:1; overflow:hidden;}
 .divhidden{ display:none;}
 .l{ float:left;}
 .r{float:right;}

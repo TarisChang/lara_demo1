@@ -29,7 +29,13 @@ return [
     */
 
     'disks' => [
-
+        'admin' => [ // admin 後台
+            'driver' => 'local',
+            'root' => public_path('uploads'),
+            'visibility' => 'public',
+            'url' => env('APP_URL').'/uploads',
+        ],
+        
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),

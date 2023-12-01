@@ -2,17 +2,9 @@
 @section('title', '關於我們')
 @section('main')
     <!--正文begin-->
-    <div class="about_bg" style="background: url(/assets/images/59673b861571f.jpg) center top no-repeat;">
-        <div class="about_con anim anim-1">
-            <center>
-                <p style="text-align: center"><br /></p>
-            </center>
-            <p><br /><br /><br />
-                &nbsp; &nbsp; &nbsp; <span style="color: rgb(0, 0, 0);">&nbsp;</span></p>
-            <p><span style="color: rgb(0, 0, 0);"><br /></span></p>
-            <p><span style="color: rgb(0, 0, 0);"><br /></span></p>
-            <p><span style="color: rgb(0, 0, 0);"><br /></span></p>
-            <p><span style="color: rgb(0, 0, 0);"><br /></span></p>
+    <div class="about_bg"
+        style="background: url(/assets/images/world.png) center top no-repeat; height:80vh; position:relative;">
+        <div class="about_con anim anim-1" style="position: absolute; top:50%;left: 50%;transform: translate(-50%, -50%);">
             <p><span style="color: rgb(0, 0, 0);">&nbsp; &nbsp; &nbsp;
                     &nbsp;深圳電氣有限公司是一家堅持技術傳承與發展變革，持續專注於逆變銲割設備、銲接自動化、IGBT芯片、IGBT敺動芯片、智能功率模塊及數碼變頻發電機的研發、生産、銷售及服務於一躰的國內知名技術敺動型企業，業務遍及五大洲70多個國家和地區。
                     &nbsp; &nbsp; &nbsp; &nbsp;</span></p>

@@ -8,7 +8,7 @@
             <div class="about_x anim anim-2">
                 <h1 class="show_t">銲割自動化解決方案</h1>
 
-                <div class="con_line">瀏覽：310次&nbsp;&nbsp;&nbsp;&nbsp;發佈日期： 2017-06-03</div>
+                <div class="con_line">瀏覽：310次&nbsp;&nbsp;&nbsp;&nbsp;發佈日期： 2023-06-03</div>
                 <div class="con_id">
                     <center>
                         <p style="text-align: center"><img src="/assets/picture/5932506515325.jpg" title="news_img3.jpg" /></p>

@@ -1,8 +1,8 @@
 <header class="header-v1">
     <!-- S top-main -->
     <div class="top-main">
-        <div class="logo1"><a href="index.html"><img src="/assets/picture/logo.png" alt="" /></a></div>
-        <a href="#" class="languages"><img src="/assets/picture/top_pic2.png" alt="" /></a>
+        <div class="logo1"><a href="{{ route('home') }}"><img src="/uploads/{{ $global['logo'] ?? '' }}" alt="{{ $global['name'] ?? '' }}" width="100"/></a></div>
+        <a href="#" class="languages">EN</a>
 
 
         <div class="top_search"><em></em>
@@ -99,8 +99,8 @@
 <!-- S touch-top-wrapper -->
 <div class="touch-top">
     <div class="touch-top-wrapper clearfix">
-        <div class="touch-logo" skinobjectzone="HtmlLogo_1514"><a class="" href="index.html"><img
-                    src="{{ $global['logo'] ?? '' }}" alt="{{ $global['name'] ?? '' }}" /></a></div>
+        <div class="touch-logo" skinobjectzone="HtmlLogo_1514"><a class="" href="{{ route('home') }}"><img
+                    src="/uploads/{{ $global['logo'] ?? '' }}" alt="{{ $global['name'] ?? '' }}" /></a></div>
         <!-- S touch-navigation -->
         <div class="touch-navigation">
             <div class="touch-toggle">
