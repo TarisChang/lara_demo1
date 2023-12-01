@@ -18,38 +18,18 @@ class NewsController extends AdminController
     protected function grid()
     {
         return Grid::make(new News(), function (Grid $grid) {
-            $grid->column('id')->sortable();
+            $grid->column('image')->image();
             $grid->column('title');
-            $grid->column('image');
             $grid->column('news_at');
-            $grid->column('content');
-            $grid->column('created_at');
-            $grid->column('updated_at')->sortable();
-        
-            $grid->filter(function (Grid\Filter $filter) {
-                $filter->equal('id');
-        
-            });
-        });
-    }
+            $grid->column('updated_at');
 
-    /**
-     * Make a show builder.
-     *
-     * @param mixed $id
-     *
-     * @return Show
-     */
-    protected function detail($id)
-    {
-        return Show::make($id, new News(), function (Show $show) {
-            $show->field('id');
-            $show->field('title');
-            $show->field('image');
-            $show->field('news_at');
-            $show->field('content');
-            $show->field('created_at');
-            $show->field('updated_at');
+            $grid->filter(function (Grid\Filter $filter) {
+                $filter->like('title');
+                $filter->like('content');
+                $filter->between('news_at')->date();
+            });
+
+            $grid->model()->orderBy('news_at', 'desc');
         });
     }
 
@@ -61,12 +41,11 @@ class NewsController extends AdminController
     protected function form()
     {
         return Form::make(new News(), function (Form $form) {
-            $form->display('id');
-            $form->text('title');
-            $form->text('image');
-            $form->text('news_at');
-            $form->text('content');
-        
+            $form->text('title')->required();
+            $form->image('image', '圖片')->accept('jpg,png,gif,jpeg,webp', 'image/*')->autoUpload()->required();
+            $form->date('news_at')->required();
+            $form->editor('content')->required();
+
             $form->display('created_at');
             $form->display('updated_at');
         });

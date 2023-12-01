@@ -18,7 +18,6 @@ class ContactController extends AdminController
     protected function grid()
     {
         return Grid::make(new Contact(), function (Grid $grid) {
-            $grid->column('id')->sortable();
             $grid->column('name');
             $grid->column('phone');
             $grid->column('email');
@@ -26,12 +25,13 @@ class ContactController extends AdminController
             $grid->column('note');
             $grid->column('company');
             $grid->column('created_at');
-            $grid->column('updated_at')->sortable();
-        
-            $grid->filter(function (Grid\Filter $filter) {
-                $filter->equal('id');
-        
-            });
+
+            $grid->model()->orderBy('created_at', 'desc');
+
+            $grid->disableCreateButton();
+            $grid->disableEditButton();
+            $grid->disableDeleteButton();
+            $grid->showViewButton();
         });
     }
 
@@ -45,7 +45,6 @@ class ContactController extends AdminController
     protected function detail($id)
     {
         return Show::make($id, new Contact(), function (Show $show) {
-            $show->field('id');
             $show->field('name');
             $show->field('phone');
             $show->field('email');
@@ -57,24 +56,15 @@ class ContactController extends AdminController
         });
     }
 
-    /**
-     * Make a form builder.
-     *
-     * @return Form
-     */
     protected function form()
     {
         return Form::make(new Contact(), function (Form $form) {
-            $form->display('id');
+            $form->text('name')->required();
             $form->text('name');
             $form->text('phone');
             $form->text('email');
             $form->text('content');
             $form->text('note');
-            $form->text('company');
-        
-            $form->display('created_at');
-            $form->display('updated_at');
         });
     }
 }

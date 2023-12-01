@@ -19,6 +19,6 @@ Route::group([
     $router->resource('case', 'CaseController');
 
     $router->get('settings', 'SettingController@index');
-    $router->get('about', 'SettingController@index');
-    $router->get('contact', 'ContactController@index');
+    $router->get('about', 'SettingController@about');
+    $router->resource('contact', 'ContactController');
 });

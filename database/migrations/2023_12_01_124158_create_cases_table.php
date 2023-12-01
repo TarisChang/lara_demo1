@@ -18,6 +18,7 @@ class CreateCasesTable extends Migration
             $table->string('title');
             $table->mediumText('desc');
             $table->string('image')->nullable();
+            $table->integer('order');
             $table->timestamps();
         });
     }

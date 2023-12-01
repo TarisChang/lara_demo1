@@ -29,9 +29,9 @@ class About extends Form
     public function form()
     {
         $this->confirm('確定修改？');
-        $this->editor('about', '企業簡介')->default(admin_setting('about'))->required();
-        $this->editor('history', '發展歷程')->default(admin_setting('history'))->required();
-        $this->editor('culture', '企業文化')->default(admin_setting('culture'))->required();
+        $this->editor('about', '企業簡介')->default(admin_setting('about'));
+        $this->editor('history', '發展歷程')->default(admin_setting('history'));
+        $this->editor('culture', '企業文化')->default(admin_setting('culture'));
         $this->disableResetButton();
     }
 

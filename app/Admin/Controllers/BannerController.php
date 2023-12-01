@@ -18,36 +18,12 @@ class BannerController extends AdminController
     protected function grid()
     {
         return Grid::make(new Banner(), function (Grid $grid) {
-            $grid->column('id')->sortable();
-            $grid->column('image');
+            $grid->column('image')->image();
             $grid->column('alt');
-            $grid->column('order');
             $grid->column('created_at');
             $grid->column('updated_at')->sortable();
-        
-            $grid->filter(function (Grid\Filter $filter) {
-                $filter->equal('id');
-        
-            });
-        });
-    }
 
-    /**
-     * Make a show builder.
-     *
-     * @param mixed $id
-     *
-     * @return Show
-     */
-    protected function detail($id)
-    {
-        return Show::make($id, new Banner(), function (Show $show) {
-            $show->field('id');
-            $show->field('image');
-            $show->field('alt');
-            $show->field('order');
-            $show->field('created_at');
-            $show->field('updated_at');
+            $grid->model()->orderBy('order');
         });
     }
 
@@ -59,10 +35,8 @@ class BannerController extends AdminController
     protected function form()
     {
         return Form::make(new Banner(), function (Form $form) {
-            $form->display('id');
-            $form->text('image');
-            $form->text('alt');
-            $form->text('order');
+            $form->image('image', '圖片')->accept('jpg,png,gif,jpeg,webp', 'image/*')->autoUpload()->required();
+            $form->text('alt')->required();
         
             $form->display('created_at');
             $form->display('updated_at');

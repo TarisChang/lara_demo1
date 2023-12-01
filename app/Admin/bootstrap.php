@@ -24,3 +24,32 @@ use Dcat\Admin\Show;
  * Admin::js('/packages/prettydocs/js/main.js');
  *
  */
+
+
+Grid::resolving(function (Grid $grid) {
+    // $grid->disableActions();
+
+    // $grid->disablePagination();
+
+    // $grid->disableCreateButton();
+
+    // $grid->disableFilter();
+    if (request()->route()->getName() != "dcat.admin.contact") {
+        $grid->order->orderable();
+    }
+
+    $grid->disableRowSelector();
+    $grid->disableRefreshButton();
+
+    $grid->actions(function ($actions) {
+        $actions->disableView();
+    });
+});
+
+
+Form::resolving(function (Form $form) {
+    $form->disableViewButton();
+    $form->disableResetButton();
+    $form->disableEditingCheck();
+    $form->disableViewCheck();
+});

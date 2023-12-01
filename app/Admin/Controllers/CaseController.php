@@ -2,10 +2,9 @@
 
 namespace App\Admin\Controllers;
 
-use App\Admin\Repositories\Case;
+use App\Models\Cases;
 use Dcat\Admin\Form;
 use Dcat\Admin\Grid;
-use Dcat\Admin\Show;
 use Dcat\Admin\Http\Controllers\AdminController;
 
 class CaseController extends AdminController
@@ -17,37 +16,12 @@ class CaseController extends AdminController
      */
     protected function grid()
     {
-        return Grid::make(new Case(), function (Grid $grid) {
-            $grid->column('id')->sortable();
+        return Grid::make(new Cases(), function (Grid $grid) {
+            $grid->column('image')->image();
             $grid->column('title');
-            $grid->column('desc');
-            $grid->column('image');
-            $grid->column('created_at');
             $grid->column('updated_at')->sortable();
-        
-            $grid->filter(function (Grid\Filter $filter) {
-                $filter->equal('id');
-        
-            });
-        });
-    }
-
-    /**
-     * Make a show builder.
-     *
-     * @param mixed $id
-     *
-     * @return Show
-     */
-    protected function detail($id)
-    {
-        return Show::make($id, new Case(), function (Show $show) {
-            $show->field('id');
-            $show->field('title');
-            $show->field('desc');
-            $show->field('image');
-            $show->field('created_at');
-            $show->field('updated_at');
+    
+            $grid->model()->orderBy('order');
         });
     }
 
@@ -58,11 +32,10 @@ class CaseController extends AdminController
      */
     protected function form()
     {
-        return Form::make(new Case(), function (Form $form) {
-            $form->display('id');
-            $form->text('title');
-            $form->text('desc');
-            $form->text('image');
+        return Form::make(new Cases(), function (Form $form) {
+            $form->image('image')->accept('jpg,png,gif,jpeg,webp', 'image/*')->autoUpload()->required();
+            $form->text('title')->required();
+            $form->editor('desc')->required();
         
             $form->display('created_at');
             $form->display('updated_at');

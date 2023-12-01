@@ -8,9 +8,9 @@ use Spatie\EloquentSortable\SortableTrait;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Banner extends Model implements Sortable
+class Cases extends Model implements Sortable
 {
-	use HasDateTimeFormatter;
+	use HasDateTimeFormatter;    
 	use SortableTrait;
 	
 	protected $sortable = [
