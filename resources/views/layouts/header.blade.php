@@ -49,7 +49,7 @@
                             </dl>
                         </div>
                     </li>
-                    <li id="m3" class="m {{ in_array(request()->route()->getName(), ['product', 'product.detail']) ? 'on': '' }}">
+                    {{-- <li id="m3" class="m {{ in_array(request()->route()->getName(), ['product', 'product.detail']) ? 'on': '' }}">
                         <h3><a href="{{ route('product') }}" title="産品與服務">産品與服務</a></h3>
                         <div class="sub" style="display:none">
                             <dl>
@@ -61,7 +61,7 @@
                                 <dd><a href="{{ route('product') }}">電子元器件</a></dd>
                             </dl>
                         </div>
-                    </li>
+                    </li> --}}
                     <li id="m4" class="m {{ in_array(request()->route()->getName(), ['news', 'news.detail']) ? 'on': '' }}">
                         <h3><a href="{{ route('news') }}" title="最新消息">最新消息</a></h3>
                     </li>

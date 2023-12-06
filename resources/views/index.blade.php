@@ -73,8 +73,7 @@
     <div class="flash_div">
         <div class="flash">
             <ul class="ul_flash">
-                <li><a href="javascript:void(0);" title=""><img src="/assets/picture/banner1.jpg"
-                            alt=""></a>
+                <li><a href="javascript:void(0);" title=""><img src="/assets/picture/banner1.jpg" alt=""></a>
                 </li>
                 <li><a href="javascript:void(0);" title=""><img src="/assets/picture/595f55a7820e7.jpg"
                             alt=""></a>
@@ -89,7 +88,7 @@
     <script type="text/javascript" src="/assets/js/index.js"></script>
     <!--flash end-->
     <!--産品中心begin-->
-    <div class="i_pro_bg2">
+    {{-- <div class="i_pro_bg2">
         <div class="i_pro_t  anim anim-1">産品與服務</div>
         <div id="owl-demo2" class="owl-carousel anim anim-2">
             <div class="item">
@@ -173,21 +172,7 @@
                 </dd>
             </div>
         </div>
-        <script src="/assets/js/owl.carousel.js"></script>
-        <script>
-            $("#owl-demo2").owlCarousel({
-                items: 3,
-                lazyLoad: true,
-                autoPlay: true,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [979, 3],
-                itemsTablet: [768, 2],
-                itemsTabletSmall: false,
-                itemsMobile: [479, 2],
-                navigation: true
-            });
-        </script>
-    </div>
+    </div> --}}
     <!--産品中心end-->
     <!--工程案例begin-->
     <div class="i_pro_t anim anim-1" style="bottom:2%;">工程案例</div>
@@ -204,8 +189,7 @@
 
             <div class="i_pro_bg">
                 <a href="javascript:void(0)">
-                    <div class="bg-list-hs"
-                        style=" background:url(/assets/images/596747f854a8c.png) center top no-repeat;">
+                    <div class="bg-list-hs" style=" background:url(/assets/images/596747f854a8c.png) center top no-repeat;">
                         <div class="bg-list-sub-hs">
                             <p>現代橋梁的建造，涉及到鋼材等材料的應用就離不開銲接，銲機廣泛應用於各種橋梁建造中。</p>
                         </div>
@@ -228,8 +212,7 @@
 
             <div class="i_pro_bg">
                 <a href="javascript:void(0)">
-                    <div class="bg-list-hs"
-                        style=" background:url(/assets/images/5967480a215f3.png) center top no-repeat;">
+                    <div class="bg-list-hs" style=" background:url(/assets/images/5967480a215f3.png) center top no-repeat;">
                         <div class="bg-list-sub-hs">
                             <p>船舶、航天飛機以及其他對銲接工藝要求較高的行業應用領域中，銲機扮縯了不可缺少的角色。</p>
                         </div>
@@ -252,8 +235,7 @@
 
             <div class="i_pro_bg">
                 <a href="javascript:void(0)">
-                    <div class="bg-list-hs"
-                        style=" background:url(/assets/images/59674831c07c9.png) center top no-repeat;">
+                    <div class="bg-list-hs" style=" background:url(/assets/images/59674831c07c9.png) center top no-repeat;">
                         <div class="bg-list-sub-hs">
                             <p>門窗加工</p>
                         </div>
@@ -390,18 +372,6 @@
             </div>
         </div>
     </div>
-    <script>
-        $("#owl-demo").owlCarousel({
-            items: 5,
-            lazyLoad: true,
-            itemsDesktop: [1600, 4],
-            itemsDesktopSmall: [1279, 3],
-            itemsTablet: [768, 2],
-            itemsMobile: [479, 2],
-            autoPlay: true,
-            navigation: true
-        });
-    </script>
     <!--工程案例end-->
     <!--關於我們begin-->
     <div class="i_about">
@@ -426,13 +396,13 @@
     <!--最新消息begin-->
     <div class="i_news_bg">
         <div class="i_about_t anim anim-1">最新消息</div>
-        <div class="i_news_a anim anim-2">
+        {{-- <div class="i_news_a anim anim-2">
 
             <a href="javascript:void(0)" j class="osel">新聞動態</a>
 
             <a href="javascript:void(0)">銲接資訊</a>
 
-        </div>
+        </div> --}}
         <div class="i_news_con anim anim-3">
             <div class="i_news_div" style="display:block;">
                 <!--公司資訊begin-->
@@ -499,18 +469,7 @@
                     </div>
 
                 </div>
-                <script>
-                    $("#owl-demo3").owlCarousel({
-                        items: 1,
-                        lazyLoad: true,
-                        itemsDesktop: [1600, 1],
-                        itemsDesktopSmall: [1279, 1],
-                        itemsTablet: [768, 1],
-                        itemsMobile: [479, 1],
-                        autoPlay: true,
-                        navigation: true
-                    });
-                </script>
+
                 <!--公司資訊end-->
             </div>
             <div class="i_news_div">
@@ -532,10 +491,6 @@
                                             </div>
                                         </a>
                                     </li>
-
-
-
-
                                     <li>
                                         <a href="{{ route('news.detail', 1) }}">
                                             <div class="four_date"><b>06</b>2023-03</div>
@@ -657,6 +612,47 @@
 @endsection
 
 @section('js')
+    {{-- 輪播 --}}
+    <script src="/assets/js/owl.carousel.js"></script>
+    <script>
+        $("#owl-demo2").owlCarousel({
+            items: 3,
+            lazyLoad: true,
+            autoPlay: true,
+            itemsDesktop: [1199, 3],
+            itemsDesktopSmall: [979, 3],
+            itemsTablet: [768, 2],
+            itemsTabletSmall: false,
+            itemsMobile: [479, 2],
+            navigation: true
+        });
+    </script>
+
+    <script>
+        $("#owl-demo").owlCarousel({
+            items: 5,
+            lazyLoad: true,
+            itemsDesktop: [1600, 4],
+            itemsDesktopSmall: [1279, 3],
+            itemsTablet: [768, 2],
+            itemsMobile: [479, 2],
+            autoPlay: true,
+            navigation: true
+        });
+    </script>
+
+    <script>
+        $("#owl-demo3").owlCarousel({
+            items: 1,
+            lazyLoad: true,
+            itemsDesktop: [1600, 1],
+            itemsDesktopSmall: [1279, 1],
+            itemsTablet: [768, 1],
+            itemsMobile: [479, 1],
+            autoPlay: true,
+            navigation: true
+        });
+    </script>
     <!--彈窗begin-->
     <div class="case_bgs">&nbsp;</div>
     <div class="case_tc">

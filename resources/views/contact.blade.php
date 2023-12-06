@@ -33,9 +33,8 @@
 
         </div>
     </div>
-    <div class="about_t3  anim anim-5">建議留言</div>
+    {{-- <div class="about_t3  anim anim-5">建議留言</div>
     <div class="feedback_div anim anim-6">
-
         <form actionurl="#" method="post" onload="init()" id="qiandaoform" onSubmit="return checkform2(this);">
             <div>
                 <input class="inputs2" name="name" value="您的姓名：" onFocus="if(value=='您的姓名：'){value=''}"
@@ -129,6 +128,6 @@
                 return false;
             }
         </script>
-    </div>
+    </div> --}}
     <!--正文end-->
 @endsection

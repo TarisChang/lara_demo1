@@ -27,7 +27,7 @@
                             data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_fbook" data-cmd="fbook"
                             title="分享到Facebook"></a><a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
                     </div>
-                    <script>
+                    {{-- <script>
                         window._bd_share_config = {
                             "common": {
                                 "bdSnsKey": {},
@@ -43,7 +43,7 @@
                         with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src =
                             'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
                     </script>
-                    <span class="span">分享到：</span>
+                    <span class="span">分享到：</span> --}}
                 </div>
                 <div class="prenext">
 
@@ -51,7 +51,7 @@
                         上一篇：<a href="#">銲割自動化解決方案</a> <br />
                         下一篇：<a href="#">高速銲接工藝</a> </span>
 
-                    <a href="javascript:history.back()" class="goback">返廻列表</a>
+                    <a href="javascript:history.back()" class="goback">返回列表</a>
                 </div>
 
             </div>
