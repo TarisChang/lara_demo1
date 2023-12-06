@@ -5,7 +5,7 @@
 @endsection
 @section('main')
     {{-- 輪播 --}}
-    <div id="a1portalSkin_ctr211899211899_mainArea" class="module-content"><!-- Start_Module_211899 --><!-- S slideshow -->
+    <div id="a1portalSkin_ctr211899211899_mainArea" class="module-content">
         <div class="slideshow carousel clearfix" style="height:750px; overflow:hidden;">
             <div id="carousel-211899">
                 <div class="carousel-item">

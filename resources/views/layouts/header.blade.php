@@ -2,11 +2,9 @@
     <!-- S top-main -->
     <div class="top-main">
         <div class="logo1"><a href="{{ route('home') }}"><img src="/uploads/{{ $global['logo'] ?? '' }}" alt="{{ $global['name'] ?? '' }}" width="100"/></a></div>
-        <a href="#" class="languages">EN</a>
+        {{-- <a href="#" class="languages">EN</a> --}}
 
-
-        <div class="top_search"><em></em>
-
+        {{-- <div class="top_search"><em></em>
             <div class="search_con">
                 <form onSubmit="return checktop(this);" action="#" method="get" name="search" id="form3">
                     <input class="input1" name="title" value="Search" onFocus="if(value=='Search'){value=''}"
@@ -33,7 +31,7 @@
                     }
                 </script>
             </div>
-        </div>
+        </div> --}}
         <div class="top-main-content"><!-- S nav -->
             <div class="navBar">
                 <ul class="nav clearfix">

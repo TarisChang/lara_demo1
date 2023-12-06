@@ -22,9 +22,9 @@
 
 .carousel-btn { text-align:center; margin:10px 0; line-height:normal; }
 
-.carousel-btn a { display:inline-block; width:67px; height:2px; margin:0 5px; background:url(../images/dian.png) no-repeat; background-size:100% 100%; /*border-radius:50%; */}
+.carousel-btn a { display:inline-block; width:67px; height:2px; margin:0 5px; background:url(../images/dian2.png) no-repeat; background-size:100% 100%; /*border-radius:50%; */}
 
-.carousel-btn .selected {background:url(../images/dian2.png) no-repeat; cursor:default;background-size:100% 100%;}
+.carousel-btn .selected {background:url(../images/dian.png) no-repeat; cursor:default;background-size:100% 100%;}
 
 .carousel-btn a span { display:none;}
 
