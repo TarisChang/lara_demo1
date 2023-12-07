@@ -2,13 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cases;
+use App\Models\Join;
+use App\Models\News;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
 {
     function index()
     {
-        return view("index");
+        $news = News::where('news_at', '<=', date('Y-m-d'))->orderBy('news_at', 'desc')->limit(3)->get();
+
+        return view("index", compact('news'));
     }
 
     function about()
@@ -33,17 +38,23 @@ class FrontController extends Controller
 
     function case()
     {
-        return view("case");
+        $data = Cases::orderBy('updated_at', 'desc')->paginate(8);
+
+        return view("case", compact('data'));
     }
 
     function news()
     {
-        return view("news");
+        $data = News::where('news_at', '<=', date('Y-m-d'))->orderBy('news_at', 'desc')->paginate(4);
+
+        return view("news", compact('data'));
     }
 
-    function newsDetail()
+    function newsDetail($title)
     {
-        return view("news_detail");
+        $data = News::where('title', $title)->first();
+
+        return view("news_detail", compact('data'));
     }
 
     function product()
@@ -58,6 +69,8 @@ class FrontController extends Controller
 
     function join()
     {
-        return view("join");
+        $data = Join::all();
+
+        return view("join", compact('data'));
     }
 }

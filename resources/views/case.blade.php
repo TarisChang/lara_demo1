@@ -198,10 +198,10 @@
 
             </ul>
         </div>
-        <div class="pages anim anim-3 yema">
+        {{-- <div class="pages anim anim-3 yema">
             <div> <span class="current">1</span><a class="num" href="#">2</a> <a class="next"
                     href="#">>></a> </div>
-        </div>
+        </div> --}}
     </div>
     <!--正文end-->
 
