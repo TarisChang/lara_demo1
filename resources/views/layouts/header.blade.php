@@ -103,8 +103,8 @@
         <div class="touch-navigation">
             <div class="touch-toggle">
                 <ul>
-                    <li class="touch-toggle-item-last"><a href="javascript:void(0);" class="drawer-menu"
-                            data-drawer="search_div"><i class="touch-icon-search"><span>搜索</span></i></a></li>
+                    {{-- <li class="touch-toggle-item-last"><a href="javascript:void(0);" class="drawer-menu"
+                            data-drawer="search_div"><i class="touch-icon-search"><span>搜索</span></i></a></li> --}}
                     <li class="touch-toggle-item-last"><a href="javascript:;" class="drawer-menu"
                             data-drawer="drawer-section-menu"><i class="touch-icon-menu"></i><span>導航</span></a></li>
                 </ul>
