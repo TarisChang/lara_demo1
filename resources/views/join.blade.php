@@ -12,13 +12,13 @@
                             <table width="100%" border="0" cellspacing="1" cellpadding="0">
                                 <tbody>
                                     <tr>
-                                        <td width="33%" style="padding-left:2%; text-align:left;">
+                                        <td width="25%" style="padding-left:2%; text-align:left;">
                                         <strong>{{ $item->position }}</strong>
                                         </td>
-                                        <td width="25%">{{ $item->school }}</td>
+                                        <td width="20%">{{ $item->school }}</td>
                                         <td width="10%">{{ $item->people }}人</td>
                                         <td width="25%">{{ $item->kind }}</td>
-                                        <td>&nbsp;</td>
+                                        <td width="25%">&nbsp;</td>
                                     </tr>
                                     <tr>
                                         <td colspan="4" style="padding-left:2%; text-align:left;" class="job_con">

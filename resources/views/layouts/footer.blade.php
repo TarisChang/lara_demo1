@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="tel:04-2500-0000" class="tel">04-2500-0000</a></li>
                 <li><a href="mailto:sales@example.com" class="email">sales@example.com</a></li>
-                <li>艾克思電氣有限公司 All rights reserved</li>
+                <li>艾克思機械有限公司 All rights reserved</li>
             </ul>
         </div>
     </div>

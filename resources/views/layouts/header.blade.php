@@ -133,12 +133,10 @@
                             <li><a href="{{ route('about') }}"><span>企業簡介</span></a></li>
                             <li><a href="{{ route('history') }}"><span>發展歷程</span></a></li>
                             <li><a href="{{ route('culture') }}"><span>企業文化</span></a></li>
-                            <li><a href="QiYeRongYu.html"><span>企業榮譽</span></a></li>
-                            <li><a href="XinWenDongTai.html"><span>新聞動態</span></a></li>
                             <li><a href="{{ route('join') }}"><span>人才招募</span></a></li>
                         </ul>
                     </li>
-                    <li> <a href="{{ route('product') }}"><span>産品與服務</span><i class="touch-arrow-down"></i> </a>
+                    {{-- <li> <a href="{{ route('product') }}"><span>産品與服務</span><i class="touch-arrow-down"></i> </a>
                         <ul>
                             <li><a href="{{ route('product') }}"><span>氣保銲系列</span></a></li>
                             <li><a href="{{ route('product') }}"><span>氬弧銲系列</span></a></li>
@@ -147,7 +145,7 @@
                             <li><a href="{{ route('product') }}"><span>埋弧銲系列</span></a></li>
                             <li><a href="{{ route('product') }}"><span>電子元器件</span></a></li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li><a href="{{ route('news') }}"><span>最新消息</span></a></li>
 
                     <li><a href="{{ route('case') }}"><span>工程案例</span> </a>
@@ -156,7 +154,7 @@
                     <li><a href="{{ route('contact') }}"><span>聯系我們</span> </a>
                         <ul></ul>
                     </li>
-                    <li><a href="#" class="languages">EN</a> </li>
+                    {{-- <li><a href="#" class="languages">EN</a> </li> --}}
                 </ul>
                 <div class="closetitle"><img src="/assets/picture/nav_bg2.png"></div>
             </div>

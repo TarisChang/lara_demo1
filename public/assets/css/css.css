@@ -370,7 +370,6 @@ a.ok:hover{color:#fff !important; border:#c30d23 1px solid !important; }
 .case_ul ul li .bg-list-hs p{ height:88px;}
 /*人才招聘*/
 .job_list table td{ font-size:12px;}
-.job_list ul li{background: url(../images/job_pic.png) #f6f6f6 99% 10px no-repeat;}
 .job_list ul li:Hover{background:url(../images/job_pic3.png) #f6f6f6 99% 10px no-repeat;}
 .job_list ul li.hauto{background: url(../images/job_pic3.png) #f6f6f6 99% 10px no-repeat;}
 

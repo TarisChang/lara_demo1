@@ -73,12 +73,12 @@
     <div class="flash_div">
         <div class="flash">
             <ul class="ul_flash">
-                <li><a href="javascript:void(0);" title=""><img src="/assets/picture/banner1.jpg" alt=""></a>
+                <li><a href="javascript:void(0);" title=""><img src="/assets/picture/banner2.png" alt=""></a>
                 </li>
-                <li><a href="javascript:void(0);" title=""><img src="/assets/picture/595f55a7820e7.jpg"
+                <li><a href="javascript:void(0);" title=""><img src="/assets/picture/banner3.png"
                             alt=""></a>
                 </li>
-                <li><a href="javascript:void(0);" title=""><img src="/assets/picture/595f5597df847.jpg"
+                <li><a href="javascript:void(0);" title=""><img src="/assets/picture/banner1.png"
                             alt=""></a>
                 </li>
             </ul>
