@@ -68,7 +68,7 @@ em, cite, th { font-style: normal; font-weight: normal; font-style:normal;}
 .top_search .search_con .bnts:hover{transition:all 0.3s;background:url(../images/top_pic4.png) no-repeat;}
 
 /* 手机导航全局 */
-.touch-top{ width:100%; position:fixed; top:0; z-index:9; background:#fff; border-top:1px solid #c30d23; display:none;box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);}
+.touch-top{ width:100%; position:fixed; top:0; z-index:100; background:#fff; border-top:1px solid #c30d23; display:none;box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);}
 .touch_bg{width:100%; position:fixed; top:0; z-index:8;background:#0d0d0d;display:none;filter: Alpha(Opacity=60);/*IE7 fix*/opacity: 0.6; height:100%;}
 .touch-top-wrapper{ width:96%; margin:0 auto;}
 .touch-top-wrapper .touch-logo{ float:left;}
