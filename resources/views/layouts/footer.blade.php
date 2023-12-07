@@ -5,8 +5,8 @@
             <img src="/uploads/{{ $global['logo'] ?? '' }}" class="foot_con_logo" width="50" />
             <div class="foot_con_a">
                 <a href="{{ route('home') }}">首頁</a>&nbsp;｜&nbsp;
-                <a href="{{ route('about') }}">關於我們</a>&nbsp;｜&nbsp;<a href="{{ route('product') }}">産品與服務</a>&nbsp;｜&nbsp;<a
-                    href="{{ route('news') }}">最新消息</a>&nbsp;｜&nbsp;<a
+                <a href="{{ route('about') }}">關於我們</a>&nbsp;｜&nbsp;
+                <a href="{{ route('news') }}">最新消息</a>&nbsp;｜&nbsp;<a
                     href="{{ route('case') }}">工程案例</a>&nbsp;｜&nbsp;<a href="{{ route('contact') }}">聯系我們</a>
             </div>
         </div>
