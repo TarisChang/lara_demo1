@@ -574,7 +574,7 @@
                             src="/assets/picture/5934ccb734db5.png">售後服務</a></li>
             </ul>
         </div>
-        <a href="#" class="i_service_more anim anim-4">在線客服</a>
+        {{-- <a href="#" class="i_service_more anim anim-4">在線客服</a> --}}
     </div>
     <!--服務中心end-->
 @endsection
