@@ -45,7 +45,7 @@
                                 <dd><a href="{{ route('about') }}">企業簡介</a></dd>
                                 <dd><a href="{{ route('history') }}">發展歷程</a></dd>
                                 <dd><a href="{{ route('culture') }}">企業文化</a></dd>
-                                <dd><a href="{{ route('join') }}">人才招募</a></dd>
+                                {{-- <dd><a href="{{ route('join') }}">人才招募</a></dd> --}}
                             </dl>
                         </div>
                     </li>
@@ -133,7 +133,7 @@
                             <li><a href="{{ route('about') }}"><span>企業簡介</span></a></li>
                             <li><a href="{{ route('history') }}"><span>發展歷程</span></a></li>
                             <li><a href="{{ route('culture') }}"><span>企業文化</span></a></li>
-                            <li><a href="{{ route('join') }}"><span>人才招募</span></a></li>
+                            {{-- <li><a href="{{ route('join') }}"><span>人才招募</span></a></li> --}}
                         </ul>
                     </li>
                     {{-- <li> <a href="{{ route('product') }}"><span>産品與服務</span><i class="touch-arrow-down"></i> </a>
