@@ -1,18 +1,16 @@
 ﻿@extends('layouts.app')
 @section('title', '聯絡我們')
 @section('main')
-    <!--正文begin-->
     <div class="contact_bg">
         <div class="about_t3  anim anim-1">聯系我們</div>
         <div class="contact_con anim anim-2">
             <ul>
                 <li><a href="tel:0755-82968506"><img src="/assets/picture/contact_pic1.png">
-
-                        <h2>聯系電話</h2>0900-000-000
+                        <h2>聯系電話</h2>{{ $global['tel'] ?? '' }}
                     </a></li>
                 <li><a href="mailto:VIP@yibaixun.com"><img src="/assets/picture/contact_pic2.png">
 
-                        <h2>信箱</h2>E-mail:example@gmail.com
+                        <h2>信箱</h2>E-mail:{{ $global['email'] ?? '' }}
                     </a></li>
                 <li><img src="/assets/picture/contact_pic3.png">
 
