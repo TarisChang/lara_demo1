@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Banner;
 use App\Models\Cases;
 use App\Models\Join;
 use App\Models\News;
@@ -11,9 +12,11 @@ class FrontController extends Controller
 {
     function index()
     {
+        $banners = Banner::orderBy('order')->get();
         $news = News::where('news_at', '<=', date('Y-m-d'))->orderBy('news_at', 'desc')->limit(3)->get();
+        $cases = Cases::orderBy('order')->get();
 
-        return view("index", compact('news'));
+        return view("index", compact('news', 'banners', 'cases'));
     }
 
     function about()

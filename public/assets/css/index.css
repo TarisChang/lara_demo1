@@ -105,7 +105,7 @@
 
 #owl-demo3.owl-theme .owl-controls{ margin-top:0;}
 #owl-demo3 .item{margin: 0px;}
-#owl-demo3 .item img{display: block;height: 100%;width: 100%;-webkit-transform:scale(1); -moz-transform:scale(1); -ms-transform:scale(1); -o-transform:scale(1); transform:scale(1);-webkit-transition:all 0.3s ease-out 0s; -moz-transition:all 0.3s ease-out 0s; -o-transition:all 0.3s ease-out 0s; transition:all 0.3s ease-out 0s; }
+#owl-demo3 .item img{display: block;height: 100%;max-height: 360px;width: 100%;-webkit-transform:scale(1); -moz-transform:scale(1); -ms-transform:scale(1); -o-transform:scale(1); transform:scale(1);-webkit-transition:all 0.3s ease-out 0s; -moz-transition:all 0.3s ease-out 0s; -o-transition:all 0.3s ease-out 0s; transition:all 0.3s ease-out 0s; }
 #owl-demo3 .item dd{ width:100%; margin:0 auto; position:relative; overflow:hidden;}
 #owl-demo3 .item dd .imgs{ width:50%; overflow:hidden; float:right; position:relative;}
 #owl-demo3 .item dd .imgs h2{ height:46px; line-height:46px; background:url(../images/i_news_bg4.png) repeat; overflow:hidden; bottom:0; left:0; width:94%; position:absolute; color:#fff; text-align:left; font-weight:normal; font-size:16px; padding-left:3%; padding-right:3%;}
@@ -169,7 +169,7 @@
 .ul_flash{width:100000px;height:100%}
 .ul_flash li{float:left;width:320px;height:100%}
 .ul_flash img{width:100%;height:100%}
-.flash .pagination{clear:both;position:absolute;left:44%;bottom:15px;z-index:99;height:10px; float:left; text-align:left;}
+.flash .pagination{clear:both;position:absolute;left:50%;bottom:15px;z-index:99;height:10px; float:left; text-align:left;transform:translate(-50%, -50%);}
 .flash .pagination span{ float:left;background:url(../images/dian2.png) no-repeat; background-size:100% 100%;width:11px;height:9px;text-indent:-9999px;border-radius:50%;-webkit-border-radius:50%;overflow:hidden;margin:0 3px;cursor:pointer;position:relative}
 .flash .pagination span.swiper-active-switch{ background:url(../images/dian.png) no-repeat; background-size:100% 100%;}
 
