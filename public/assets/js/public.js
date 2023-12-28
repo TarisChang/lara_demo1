@@ -77,13 +77,13 @@
       $("body").removeClass("nav-hide");
     }
   }
-  $(window).mousewheel(function(e, delta) { //滚动条向上滚动
-      p = $(window).scrollTop();
-      if( p > $(window).height() ){
-        if (delta < 0) {
-          $("body").addClass("nav-hide");
-        } else { //上滚
-           $("body").removeClass("nav-hide");
-        }
-      }
-  })
+  // $(window).mousewheel(function(e, delta) { //滚动条向上滚动
+  //     p = $(window).scrollTop();
+  //     if( p > $(window).height() ){
+  //       if (delta < 0) {
+  //         $("body").addClass("nav-hide");
+  //       } else { //上滚
+  //          $("body").removeClass("nav-hide");
+  //       }
+  //     }
+  // })
