@@ -1,5 +1,5 @@
 ﻿@extends('layouts.app')
-@section('title', '最新消息')
+@section('title', 'News')
 @section('main')
     <!--正文begin-->
     <div class="news_bg2">

@@ -169,7 +169,7 @@
     </div> --}}
     <!--産品中心end-->
     <!--工程案例begin-->
-    <div class="i_pro_t anim anim-1" style="bottom:2%;">工程案例</div>
+    <div class="i_pro_t anim anim-1" style="bottom:2%;">Cases</div>
     <div id="owl-demo" class="owl-carousel anim anim-2">
         @foreach ($cases as $item)
             <div class="item">
@@ -201,7 +201,7 @@
     <!--工程案例end-->
     <!--關於我們begin-->
     <div class="i_about">
-        <div class="i_about_t anim anim-1">關於我們</div>
+        <div class="i_about_t anim anim-1">About Us</div>
         <div class="i_about_con">
             <div class="imgs anim anim-2">
                 <img src="/assets/picture/i_about_img1.png" />
@@ -210,7 +210,7 @@
                 <div class="i_about_txt">
                     {!! mb_substr(strip_tags($global['about'] ?? ''), 0, 400) !!}...
                 </div>
-                <a href="{{ route('about') }}" class="i_about_more">查看更多</a>
+                <a href="{{ route('about') }}" class="i_about_more">More</a>
             </div>
 
             <div class="c_l"></div>
@@ -219,7 +219,7 @@
     <!--關於我們end-->
     <!--最新消息begin-->
     <div class="i_news_bg">
-        <div class="i_about_t anim anim-1">最新消息</div>
+        <div class="i_about_t anim anim-1">News</div>
         {{-- <div class="i_news_a anim anim-2">
 
             <a href="javascript:void(0)" j class="osel">新聞動態</a>
@@ -389,19 +389,19 @@
     <!--最新消息end-->
     <!--服務中心begin-->
     <div class="i_service_bg">
-        <div class="i_about_t anim anim-1">技術中心</div>
-        <em class="anim anim-2">我們珍惜您每一次諮詢，用專業的態度，貼心的服務，爲您分析策劃</em>
+        <div class="i_about_t anim anim-1">Technical</div>
+        <em class="anim anim-2">We cherish each of your inquiries, approaching them with a professional attitude and providing thoughtful service to analyze and plan for you.</em>
 
         <div class="i_youshi anim anim-3">
             <ul>
                 <li class="fadeInUp animated" data-animate="fadeInUp" data-delay="100"><a href="javascript:void(0)"><img
-                            src="/assets/picture/5934cd00dbe6c.png">研發設備</a></li>
+                            src="/assets/picture/5934cd00dbe6c.png">Precision Equipment</a></li>
                 <li class="fadeInUp animated" data-animate="fadeInUp" data-delay="200"><a href="javascript:void(0)"><img
-                            src="/assets/picture/5934cce85f4aa.png">研發團隊</a></li>
+                            src="/assets/picture/5934cce85f4aa.png">Professional Team</a></li>
                 <li class="fadeInUp animated" data-animate="fadeInUp" data-delay="300"><a href="javascript:void(0)"><img
-                            src="/assets/picture/5934ccd4a8bf3.png">生産車間</a></li>
+                            src="/assets/picture/5934ccd4a8bf3.png">Production</a></li>
                 <li class="fadeInUp animated" data-animate="fadeInUp" data-delay="400"><a href="javascript:void(0)"><img
-                            src="/assets/picture/5934ccb734db5.png">售後服務</a></li>
+                            src="/assets/picture/5934ccb734db5.png">After-sales Service</a></li>
             </ul>
         </div>
         {{-- <a href="#" class="i_service_more anim anim-4">在線客服</a> --}}

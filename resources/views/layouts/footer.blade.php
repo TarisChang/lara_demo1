@@ -4,18 +4,18 @@
         <div class="foot_con_l">
             <img src="/uploads/{{ $global['logo'] ?? '' }}" class="foot_con_logo" width="50" />
             <div class="foot_con_a">
-                <a href="{{ route('home') }}">首頁</a>&nbsp;｜&nbsp;
-                <a href="{{ route('about') }}">關於我們</a>&nbsp;｜&nbsp;
-                <a href="{{ route('news') }}">最新消息</a>&nbsp;｜&nbsp;<a
-                    href="{{ route('case') }}">工程案例</a>&nbsp;｜&nbsp;<a href="{{ route('contact') }}">聯系我們</a>
+                <a href="{{ route('home') }}">Home</a>&nbsp;｜&nbsp;
+                <a href="{{ route('about') }}">About Us</a>&nbsp;｜&nbsp;
+                <a href="{{ route('news') }}">News</a>&nbsp;｜&nbsp;<a
+                    href="{{ route('case') }}">Cases</a>&nbsp;｜&nbsp;<a href="{{ route('contact') }}">Contact</a>
             </div>
         </div>
         <div class="foot_con_r">
             {{-- <img src="qrcode"/> --}}
             <ul>
-                <li><a href="tel:04-2500-0000" class="tel">04-2500-0000</a></li>
-                <li><a href="mailto:sales@example.com" class="email">sales@example.com</a></li>
-                <li>艾克思機械有限公司 All rights reserved</li>
+                <li><a href="tel:{{ $global['tel'] ?? '' }}" class="tel">{{ $global['tel'] ?? '' }}</a></li>
+                <li><a href="mailto:{{ $global['email'] ?? '' }}" class="email" target="_blank">{{ $global['email'] ?? '' }}</a></li>
+                <li>{{ $global['name'] ?? '' }} All rights reserved</li>
             </ul>
         </div>
     </div>

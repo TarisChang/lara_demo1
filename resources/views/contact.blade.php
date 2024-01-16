@@ -2,21 +2,21 @@
 @section('title', '聯絡我們')
 @section('main')
     <div class="contact_bg">
-        <div class="about_t3  anim anim-1">聯系我們</div>
+        <div class="about_t3  anim anim-1">Contact Us</div>
         <div class="contact_con anim anim-2">
             <ul>
                 <li><a href="tel:0755-82968506"><img src="/assets/picture/contact_pic1.png">
-                        <h2>聯系電話</h2>{{ $global['tel'] ?? '' }}
+                        <h2>Phone</h2>{{ $global['tel'] ?? '' }}
                     </a></li>
                 <li><a href="mailto:VIP@yibaixun.com"><img src="/assets/picture/contact_pic2.png">
 
-                        <h2>信箱</h2>E-mail:{{ $global['email'] ?? '' }}
+                        <h2>E-mail</h2>{{ $global['email'] ?? '' }}
                     </a></li>
                 <li><img src="/assets/picture/contact_pic3.png">
 
-                    <p>艾克思網頁設計
+                    <p>{{ $global['name'] ?? '' }}
                         <br>
-                        線上快速溝通架站
+                        {{ $global['address'] ?? '' }}
                     </p>
                 </li>
             </ul>

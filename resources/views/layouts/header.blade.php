@@ -36,15 +36,15 @@
             <div class="navBar">
                 <ul class="nav clearfix">
                     <li id="m1" class="m {{ request()->route()->getName() == 'home'? 'on': '' }}">
-                        <h3><a href="{{ route('home') }}" title="首頁">首頁</a></h3>
+                        <h3><a href="{{ route('home') }}" title="Home">Home</a></h3>
                     </li>
                     <li id="m2" class="m {{ in_array(request()->route()->getName(), ['about', 'history', 'culture', 'join']) ? 'on': '' }}">
-                        <h3><a href="{{ route('about') }}" title="關於我們">關於我們</a></h3>
+                        <h3><a href="{{ route('about') }}" title="about">About US</a></h3>
                         <div class="sub" style="display:none">
                             <dl>
-                                <dd><a href="{{ route('about') }}">企業簡介</a></dd>
-                                <dd><a href="{{ route('history') }}">發展歷程</a></dd>
-                                <dd><a href="{{ route('culture') }}">企業文化</a></dd>
+                                <dd><a href="{{ route('about') }}">Introduction</a></dd>
+                                <dd><a href="{{ route('history') }}">History</a></dd>
+                                <dd><a href="{{ route('culture') }}">Culture</a></dd>
                                 {{-- <dd><a href="{{ route('join') }}">人才招募</a></dd> --}}
                             </dl>
                         </div>
@@ -63,13 +63,13 @@
                         </div>
                     </li> --}}
                     <li id="m4" class="m {{ in_array(request()->route()->getName(), ['news', 'news.detail']) ? 'on': '' }}">
-                        <h3><a href="{{ route('news') }}" title="最新消息">最新消息</a></h3>
+                        <h3><a href="{{ route('news') }}" title="News">News</a></h3>
                     </li>
                     <li id="m6" class="m {{ request()->route()->getName() == 'case'? 'on': '' }}">
-                        <h3><a href="{{ route('case') }}" title="工程案例">工程案例</a></h3>
+                        <h3><a href="{{ route('case') }}" title="Cases">Cases</a></h3>
                     </li>
                     <li id="m7" class="m {{ request()->route()->getName() == 'contact'? 'on': '' }}">
-                        <h3><a href="{{ route('contact') }}" title="聯系我們">聯系我們</a></h3>
+                        <h3><a href="{{ route('contact') }}" title="Contact">Contact</a></h3>
                         <div class="sub">
                             <dl></dl>
                         </div>
@@ -106,7 +106,7 @@
                     {{-- <li class="touch-toggle-item-last"><a href="javascript:void(0);" class="drawer-menu"
                             data-drawer="search_div"><i class="touch-icon-search"><span>搜索</span></i></a></li> --}}
                     <li class="touch-toggle-item-last"><a href="javascript:;" class="drawer-menu"
-                            data-drawer="drawer-section-menu"><i class="touch-icon-menu"></i><span>導航</span></a></li>
+                            data-drawer="drawer-section-menu"><i class="touch-icon-menu"></i><span>nav</span></a></li>
                 </ul>
             </div>
         </div>
@@ -126,13 +126,13 @@
         <div class="drawer-section drawer-section-menu">
             <div class="touch-menu" skinobjectzone="menu_2005">
                 <ul>
-                    <li><a href="{{ route('home') }}"><span>首頁</span></a></li>
+                    <li><a href="{{ route('home') }}"><span>Home</span></a></li>
 
-                    <li><a href="javascript:;"><span>關於我們</span><i class="touch-arrow-down"></i> </a>
+                    <li><a href="javascript:;"><span>About US</span><i class="touch-arrow-down"></i> </a>
                         <ul>
-                            <li><a href="{{ route('about') }}"><span>企業簡介</span></a></li>
-                            <li><a href="{{ route('history') }}"><span>發展歷程</span></a></li>
-                            <li><a href="{{ route('culture') }}"><span>企業文化</span></a></li>
+                            <li><a href="{{ route('about') }}"><span>Introduction</span></a></li>
+                            <li><a href="{{ route('history') }}"><span>History</span></a></li>
+                            <li><a href="{{ route('culture') }}"><span>Culture</span></a></li>
                             {{-- <li><a href="{{ route('join') }}"><span>人才招募</span></a></li> --}}
                         </ul>
                     </li>
@@ -146,12 +146,12 @@
                             <li><a href="{{ route('product') }}"><span>電子元器件</span></a></li>
                         </ul>
                     </li> --}}
-                    <li><a href="{{ route('news') }}"><span>最新消息</span></a></li>
+                    <li><a href="{{ route('news') }}"><span>News</span></a></li>
 
-                    <li><a href="{{ route('case') }}"><span>工程案例</span> </a>
+                    <li><a href="{{ route('case') }}"><span>Cases</span> </a>
                         <ul></ul>
                     </li>
-                    <li><a href="{{ route('contact') }}"><span>聯系我們</span> </a>
+                    <li><a href="{{ route('contact') }}"><span>Contact</span> </a>
                         <ul></ul>
                     </li>
                     {{-- <li><a href="#" class="languages">EN</a> </li> --}}

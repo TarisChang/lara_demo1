@@ -1,9 +1,9 @@
 ﻿@extends('layouts.app')
-@section('title', '最新消息')
+@section('title', 'News')
 @section('main')
     <!--正文begin-->
     <div class="about_bg3">
-        <div class="about_t3  anim anim-1">最新消息</div>
+        <div class="about_t3  anim anim-1">News</div>
         <div class="news_ul anim anim-2">
             <ul>
                 @foreach ($data as $item)
