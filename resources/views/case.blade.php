@@ -1,5 +1,5 @@
 ﻿@extends('layouts.app')
-@section('title', '實績案例')
+@section('title', 'Cases')
 @section('main')
     <div class="about_bg3">
         <div class="about_t3  anim anim-1">Cases</div>

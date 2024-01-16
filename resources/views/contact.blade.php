@@ -1,5 +1,5 @@
 ﻿@extends('layouts.app')
-@section('title', '聯絡我們')
+@section('title', 'Contact Us')
 @section('main')
     <div class="contact_bg">
         <div class="about_t3  anim anim-1">Contact Us</div>
