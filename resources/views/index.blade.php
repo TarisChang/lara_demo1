@@ -204,7 +204,7 @@
         <div class="i_about_t anim anim-1">About Us</div>
         <div class="i_about_con">
             <div class="imgs anim anim-2">
-                <img src="/assets/picture/i_about_img1.png" />
+                <img src="/assets/picture/about_rail.jpg" />
             </div>
             <div class="i_about_r anim anim-3">
                 <div class="i_about_txt">
