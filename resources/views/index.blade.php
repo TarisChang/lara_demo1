@@ -397,9 +397,9 @@
                 <li class="fadeInUp animated" data-animate="fadeInUp" data-delay="100"><a href="javascript:void(0)"><img
                             src="/assets/picture/5934cd00dbe6c.png">Precision Equipment</a></li>
                 <li class="fadeInUp animated" data-animate="fadeInUp" data-delay="200"><a href="javascript:void(0)"><img
-                            src="/assets/picture/5934cce85f4aa.png">Professional Team</a></li>
+                            src="/assets/picture/5934cce85f4aa.png">Excellent Skills</a></li>
                 <li class="fadeInUp animated" data-animate="fadeInUp" data-delay="300"><a href="javascript:void(0)"><img
-                            src="/assets/picture/5934ccd4a8bf3.png">Production</a></li>
+                            src="/assets/picture/5934ccd4a8bf3.png">Professional Team</a></li>
                 <li class="fadeInUp animated" data-animate="fadeInUp" data-delay="400"><a href="javascript:void(0)"><img
                             src="/assets/picture/5934ccb734db5.png">After-sales Service</a></li>
             </ul>
