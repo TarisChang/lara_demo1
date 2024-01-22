@@ -14,7 +14,9 @@
                     </a></li>
                 <li><img src="/assets/picture/contact_pic3.png">
 
-                    <p>{{ $global['name'] ?? '' }}
+                    <p>Rail Work Ltd.
+                        <br>
+                        瑞沃軌道研磨有限公司
                         <br>
                         {{ $global['address'] ?? '' }}
                     </p>
