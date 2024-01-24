@@ -36,9 +36,9 @@ class Setting extends Form
         $this->text('address', '地址')->default(admin_setting('address', '台北市'));
         $this->text('tel', '電話')->default(admin_setting('tel', '0800-000-000'));
         $this->text('email', '信箱')->default(admin_setting('email', 'example@gmail.com'));
-        $this->url('line', 'LINE')->default(admin_setting('line', 'https://line.me/ti/p/~@account'));
-        $this->url('fb', 'Facebook')->default(admin_setting('fb', 'https://www.facebook.com/account'));
-        $this->url('ig', 'IG')->default(admin_setting('ig', 'https://www.instagram.com/account/'));
+        // $this->url('line', 'LINE')->default(admin_setting('line', 'https://line.me/ti/p/~@account'));
+        // $this->url('fb', 'Facebook')->default(admin_setting('fb', 'https://www.facebook.com/account'));
+        // $this->url('ig', 'IG')->default(admin_setting('ig', 'https://www.instagram.com/account/'));
 
         $this->disableResetButton();
     }
