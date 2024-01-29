@@ -20,5 +20,7 @@
         </div>
     </div>
 </div>
-<a href="javascript:void(0)" class="gotop" onClick="goTop()"></a>
+<a href="javascript:void(0)" class="gotop" onClick="goTop()">
+    <i class="fa-solid fa-circle-chevron-up gotopicon"></i>
+</a>
 <!--尾部end-->

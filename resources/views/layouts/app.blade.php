@@ -10,7 +10,7 @@
 
     <title>@yield('title')｜{{ $global['name'] ?? '' }}</title>
     
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css?v=1">
     <link rel="stylesheet" href="/assets/css/anim.css">
     <link rel="stylesheet" href="/assets/css/css.css">
     <link rel="stylesheet" href="/assets/css/index.css">
@@ -21,6 +21,10 @@
     <script src="/assets/js/jquery.touchswipe.min.js"></script>
     <script src="/assets/js/public.js"></script>
     <script src="/assets/js/anim.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     @yield('head')
 </head>

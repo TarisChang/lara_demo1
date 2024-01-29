@@ -217,180 +217,184 @@
         </div>
     </div>
     <!--關於我們end-->
-    <!--最新消息begin-->
-    <div class="i_news_bg">
-        <div class="i_about_t anim anim-1">News</div>
-        {{-- <div class="i_news_a anim anim-2">
+    @if ($news->isNotEmpty())
+        <!--最新消息begin-->
+        <div class="i_news_bg">
+            <div class="i_about_t anim anim-1">News</div>
+            {{-- <div class="i_news_a anim anim-2">
 
             <a href="javascript:void(0)" j class="osel">新聞動態</a>
 
             <a href="javascript:void(0)">銲接資訊</a>
 
         </div> --}}
-        <div class="i_news_con anim anim-3">
-            <div class="i_news_div" style="display:block;">
-                <!--公司資訊begin-->
-                <div id="owl-demo3" class="owl-carousel">
-                    <div class="item">
-                        <dd class="not-animated">
-                            <div class="i_news_l">
-                                <ul>
-                                    @foreach ($news as $item)
+            <div class="i_news_con anim anim-3">
+                <div class="i_news_div" style="display:block;">
+                    <!--公司資訊begin-->
+                    <div id="owl-demo3" class="owl-carousel">
+                        <div class="item">
+                            <dd class="not-animated">
+                                <div class="i_news_l">
+                                    <ul>
+                                        @foreach ($news as $item)
+                                            <li>
+                                                <a href="{{ route('news.detail', $item->title) }}">
+                                                    <div class="four_date">
+                                                        <b>{{ date('d', strtotime($item->news_at)) }}</b>{{ date('Y-m', strtotime($item->news_at)) }}
+                                                    </div>
+                                                    <div class="four_txt">
+                                                        <h2>{{ $item->title }}</h2>
+                                                        <p>
+                                                            {!! mb_substr(strip_tags($item->content), 0, 50) !!}...
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+
+                                @if ($news->isNotEmpty())
+                                    <a href="{{ route('news.detail', $news[0]->title) }}">
+                                        <div class="imgs">
+                                            <img height="400" src="/uploads/{{ $news[0]->image }}"
+                                                alt="{{ $news[0]->title }}">
+                                            <h2><em>{{ $news[0]->news_at }}</em>{{ $news[0]->title }}</h2>
+                                        </div>
+                                    </a>
+                                @endif
+
+                            </dd>
+                        </div>
+
+                    </div>
+
+                    <!--公司資訊end-->
+                </div>
+                <div class="i_news_div">
+                    <!--行業資訊begin-->
+                    <div id="owl-demo4" class="owl-carousel">
+                        <div class="item">
+                            <dd class="not-animated">
+                                <div class="i_news_l">
+                                    <ul>
                                         <li>
-                                            <a href="{{ route('news.detail', $item->title) }}">
-                                                <div class="four_date">
-                                                    <b>{{ date('d', strtotime($item->news_at)) }}</b>{{ date('Y-m', strtotime($item->news_at)) }}
-                                                </div>
+                                            <a href="{{ route('news.detail', 1) }}">
+                                                <div class="four_date"><b>06</b>2023-03</div>
                                                 <div class="four_txt">
-                                                    <h2>{{ $item->title }}</h2>
+                                                    <h2>高速電弧改寫工業革命</h2>
                                                     <p>
-                                                        {!! mb_substr(strip_tags($item->content), 0, 50) !!}...
+                                                        中國智造，開創高速銲接新時代！
+                                                        PT SPEED MIG-500
+                                                        多功能高速脈沖氣保銲 </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('news.detail', 1) }}">
+                                                <div class="four_date"><b>06</b>2023-03</div>
+                                                <div class="four_txt">
+                                                    <h2>銲割自動化解決方案</h2>
+                                                    <p>
+                                                        實現銲接系統的集中控制，包括集中設置、集中編程、集中操作；可在銲接過程中操作機器人，對銲接速度進行調整；對銲接過程進行編程操作，銲縫可分段，不同銲縫段設置不同銲接蓡數等。不同銲縫段設置不同銲接蓡不同銲縫段設置不同銲接蓡不同銲縫段設置不同銲接蓡
                                                     </p>
                                                 </div>
                                             </a>
                                         </li>
-                                    @endforeach
-                                </ul>
-                            </div>
 
-                            @if ($news->isNotEmpty())
-                                <a href="{{ route('news.detail', $news[0]->title) }}">
-                                    <div class="imgs">
-                                        <img height="400" src="/uploads/{{ $news[0]->image }}"
-                                            alt="{{ $news[0]->title }}">
-                                        <h2><em>{{ $news[0]->news_at }}</em>{{ $news[0]->title }}</h2>
+
+
+
+                                        <li>
+                                            <a href="{{ route('news.detail', 1) }}">
+                                                <div class="four_date"><b>06</b>2023-03</div>
+                                                <div class="four_txt">
+                                                    <h2>銲割自動化解決方案</h2>
+                                                    <p>
+                                                        實現銲接系統的集中控制，包括集中設置、集中編程、集中操作；可在銲接過程中操作機器人，對銲接速度進行調整；對銲接過程進行編程操作，銲縫可分段，不同銲縫段設置不同銲接蓡數等。不同銲縫段設置不同銲接蓡不同銲縫段設置不同銲接蓡不同銲縫段設置不同銲接蓡
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+
+
+                                    </ul>
+                                </div>
+                                <a href="{{ route('news.detail', 1) }}">
+                                    <div class="imgs"><img src="/assets/picture/5932515bc4075.jpg" alt="">
+
+                                        <h2><em>2023-06-03</em>銲割自動化解決方案</h2>
                                     </div>
                                 </a>
-                            @endif
-
-                        </dd>
-                    </div>
-
-                </div>
-
-                <!--公司資訊end-->
-            </div>
-            <div class="i_news_div">
-                <!--行業資訊begin-->
-                <div id="owl-demo4" class="owl-carousel">
-                    <div class="item">
-                        <dd class="not-animated">
-                            <div class="i_news_l">
-                                <ul>
-                                    <li>
-                                        <a href="{{ route('news.detail', 1) }}">
-                                            <div class="four_date"><b>06</b>2023-03</div>
-                                            <div class="four_txt">
-                                                <h2>高速電弧改寫工業革命</h2>
-                                                <p>
-                                                    中國智造，開創高速銲接新時代！
-                                                    PT SPEED MIG-500
-                                                    多功能高速脈沖氣保銲 </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('news.detail', 1) }}">
-                                            <div class="four_date"><b>06</b>2023-03</div>
-                                            <div class="four_txt">
-                                                <h2>銲割自動化解決方案</h2>
-                                                <p>
-                                                    實現銲接系統的集中控制，包括集中設置、集中編程、集中操作；可在銲接過程中操作機器人，對銲接速度進行調整；對銲接過程進行編程操作，銲縫可分段，不同銲縫段設置不同銲接蓡數等。不同銲縫段設置不同銲接蓡不同銲縫段設置不同銲接蓡不同銲縫段設置不同銲接蓡
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
+                            </dd>
+                        </div>
+                        <div class="item">
+                            <dd class="not-animated">
+                                <div class="i_news_l">
+                                    <ul>
+                                        <li>
+                                            <a href="{{ route('news.detail', 1) }}">
+                                                <div class="four_date"><b>06</b>2023-03</div>
+                                                <div class="four_txt">
+                                                    <h2>銲割自動化解決方案</h2>
+                                                    <p>
+                                                        實現銲接系統的集中控制，包括集中設置、集中編程、集中操作；可在銲接過程中操作機器人，對銲接速度進行調整；對銲接過程進行編程操作，銲縫可分段，不同銲縫段設置不同銲接蓡數等。不同銲縫段設置不同銲接蓡不同銲縫段設置不同銲接蓡不同銲縫段設置不同銲接蓡
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
 
 
 
 
-                                    <li>
-                                        <a href="{{ route('news.detail', 1) }}">
-                                            <div class="four_date"><b>06</b>2023-03</div>
-                                            <div class="four_txt">
-                                                <h2>銲割自動化解決方案</h2>
-                                                <p>
-                                                    實現銲接系統的集中控制，包括集中設置、集中編程、集中操作；可在銲接過程中操作機器人，對銲接速度進行調整；對銲接過程進行編程操作，銲縫可分段，不同銲縫段設置不同銲接蓡數等。不同銲縫段設置不同銲接蓡不同銲縫段設置不同銲接蓡不同銲縫段設置不同銲接蓡
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-
-
-
-
-                                </ul>
-                            </div>
-                            <a href="{{ route('news.detail', 1) }}">
-                                <div class="imgs"><img src="/assets/picture/5932515bc4075.jpg" alt="">
-
-                                    <h2><em>2023-06-03</em>銲割自動化解決方案</h2>
+                                    </ul>
                                 </div>
-                            </a>
-                        </dd>
+
+                                <a href="{{ route('news.detail', 1) }}">
+                                    <div class="imgs"><img src="/assets/picture/5934f42d3b2c2.jpg" alt="">
+
+                                        <h2><em>2023-06-03</em>銲割自動化解決方案</h2>
+                                    </div>
+                                </a>
+                            </dd>
+                        </div>
+
+
                     </div>
-                    <div class="item">
-                        <dd class="not-animated">
-                            <div class="i_news_l">
-                                <ul>
-                                    <li>
-                                        <a href="{{ route('news.detail', 1) }}">
-                                            <div class="four_date"><b>06</b>2023-03</div>
-                                            <div class="four_txt">
-                                                <h2>銲割自動化解決方案</h2>
-                                                <p>
-                                                    實現銲接系統的集中控制，包括集中設置、集中編程、集中操作；可在銲接過程中操作機器人，對銲接速度進行調整；對銲接過程進行編程操作，銲縫可分段，不同銲縫段設置不同銲接蓡數等。不同銲縫段設置不同銲接蓡不同銲縫段設置不同銲接蓡不同銲縫段設置不同銲接蓡
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-
-
-
-
-                                </ul>
-                            </div>
-
-                            <a href="{{ route('news.detail', 1) }}">
-                                <div class="imgs"><img src="/assets/picture/5934f42d3b2c2.jpg" alt="">
-
-                                    <h2><em>2023-06-03</em>銲割自動化解決方案</h2>
-                                </div>
-                            </a>
-                        </dd>
-                    </div>
-
-
+                    <script>
+                        $("#owl-demo4").owlCarousel({
+                            items: 1,
+                            lazyLoad: true,
+                            itemsDesktop: [1600, 1],
+                            itemsDesktopSmall: [1279, 1],
+                            itemsTablet: [768, 1],
+                            itemsMobile: [479, 1],
+                            autoPlay: true,
+                            navigation: true
+                        });
+                    </script>
+                    <!--行業資訊end-->
                 </div>
-                <script>
-                    $("#owl-demo4").owlCarousel({
-                        items: 1,
-                        lazyLoad: true,
-                        itemsDesktop: [1600, 1],
-                        itemsDesktopSmall: [1279, 1],
-                        itemsTablet: [768, 1],
-                        itemsMobile: [479, 1],
-                        autoPlay: true,
-                        navigation: true
-                    });
-                </script>
-                <!--行業資訊end-->
             </div>
+            <script language="javascript">
+                $('.i_news_a a').hover(function() {
+                    var linum = $(this).index();
+                    $(this).addClass('osel').siblings().removeClass('osel');
+                    $('.i_news_con .i_news_div').eq(linum).show().siblings('.i_news_div').hide()
+                })
+            </script>
+
         </div>
-        <script language="javascript">
-            $('.i_news_a a').hover(function() {
-                var linum = $(this).index();
-                $(this).addClass('osel').siblings().removeClass('osel');
-                $('.i_news_con .i_news_div').eq(linum).show().siblings('.i_news_div').hide()
-            })
-        </script>
+        <!--最新消息end-->
+    @endif
 
-    </div>
-    <!--最新消息end-->
     <!--服務中心begin-->
     <div class="i_service_bg">
         <div class="i_about_t anim anim-1">Technical</div>
-        <em class="anim anim-2">We cherish each of your inquiries, approaching them with a professional attitude and providing thoughtful service to analyze and plan for you.</em>
+        <em class="anim anim-2">We cherish each of your inquiries, approaching them with a professional attitude and
+            providing thoughtful service to analyze and plan for you.</em>
 
         <div class="i_youshi anim anim-3">
             <ul>

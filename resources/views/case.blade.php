@@ -69,7 +69,7 @@
             width: 30%;
             margin-top: 5rem;
             position: relative;
-            background-color: #c30d23;
+            background-color: #052754;
             border: 6px solid #b2b2b2;
             border-radius: 6px;
         }

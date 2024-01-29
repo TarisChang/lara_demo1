@@ -1,25 +1,53 @@
 ﻿@extends('layouts.app')
 @section('title', 'Contact Us')
+@section('head')
+    <style>
+        .contact_con ul li>a {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact_con ul li i {
+            font-size: 1.6em;
+            width: 3em;
+            height: 3em;
+            text-align: center;
+            line-height: 3em;
+            color: #052754;
+            border-radius: 50%;
+            border: 1px solid lightgrey;
+            margin-right: 1rem;
+        }
+    </style>
+@endsection
 @section('main')
     <div class="contact_bg">
         <div class="about_t3  anim anim-1">Contact Us</div>
         <div class="contact_con anim anim-2">
             <ul>
-                <li><a href="tel:0755-82968506"><img src="/assets/picture/contact_pic1.png">
-                        <h2>Phone</h2>{{ $global['tel'] ?? '' }}
+                <li style="width: 25%">
+                    <a href="tel:0755-82968506">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h2>Phone</h2>
+                            {{ $global['tel'] ?? '' }}
+                        </div>
+                    </a>
+                </li>
+                <li style="width: 25%"><a href="mailto:{{ $global['email'] ?? '' }}">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h2>E-mail</h2>{{ $global['email'] ?? '' }}
+                        </div>
                     </a></li>
-                <li><a href="mailto:VIP@yibaixun.com"><img src="/assets/picture/contact_pic2.png">
-
-                        <h2>E-mail</h2>{{ $global['email'] ?? '' }}
-                    </a></li>
-                <li><img src="/assets/picture/contact_pic3.png">
-
-                    <p>Rail Work Ltd.
-                        <br>
-                        瑞沃軌道研磨有限公司
-                        <br>
-                        {{ $global['address'] ?? '' }}
-                    </p>
+                <li style="width: 40%">
+                    <a href="https://maps.app.goo.gl/2MVpKTKjCZXciC4b9" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h2>Address</h2>
+                            {{ $global['address'] ?? '' }}
+                        </div>
+                    </a>
                 </li>
             </ul>
         </div>
