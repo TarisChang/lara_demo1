@@ -7,6 +7,7 @@ use App\Models\Cases;
 use App\Models\Join;
 use App\Models\News;
 use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
 
 class FrontController extends Controller
 {
@@ -15,6 +16,10 @@ class FrontController extends Controller
         $banners = Banner::orderBy('order')->get();
         $news = News::where('news_at', '<=', date('Y-m-d'))->orderBy('news_at', 'desc')->limit(3)->get();
         $cases = Cases::orderBy('order')->get();
+
+        // temp news
+
+        $news = new Collection([]);
 
         return view("index", compact('news', 'banners', 'cases'));
     }

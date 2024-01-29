@@ -62,9 +62,9 @@
                             </dl>
                         </div>
                     </li> --}}
-                    <li id="m4" class="m {{ in_array(request()->route()->getName(), ['news', 'news.detail']) ? 'on': '' }}">
+                    {{-- <li id="m4" class="m {{ in_array(request()->route()->getName(), ['news', 'news.detail']) ? 'on': '' }}">
                         <h3><a href="{{ route('news') }}" title="News">News</a></h3>
-                    </li>
+                    </li> --}}
                     <li id="m6" class="m {{ request()->route()->getName() == 'case'? 'on': '' }}">
                         <h3><a href="{{ route('case') }}" title="Cases">Cases</a></h3>
                     </li>
@@ -146,7 +146,7 @@
                             <li><a href="{{ route('product') }}"><span>電子元器件</span></a></li>
                         </ul>
                     </li> --}}
-                    <li><a href="{{ route('news') }}"><span>News</span></a></li>
+                    {{-- <li><a href="{{ route('news') }}"><span>News</span></a></li> --}}
 
                     <li><a href="{{ route('case') }}"><span>Cases</span> </a>
                         <ul></ul>
