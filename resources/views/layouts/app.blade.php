@@ -10,7 +10,7 @@
 
     <title>@yield('title')｜{{ $global['name'] ?? '' }}</title>
     
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css?v=1">
     <link rel="stylesheet" href="/assets/css/anim.css">
     <link rel="stylesheet" href="/assets/css/css.css">
     <link rel="stylesheet" href="/assets/css/index.css">
