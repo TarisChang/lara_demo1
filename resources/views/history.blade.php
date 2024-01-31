@@ -15,6 +15,11 @@
             vertical-align: text-top;
         }
 
+        tbody>tr td:nth-child(2)::before {
+            content: '——';
+            margin-right: .5rem;
+        }
+
         @media screen and (max-width: 480px) {
             tbody>tr td:first-child {
                 width: 40% !important;
