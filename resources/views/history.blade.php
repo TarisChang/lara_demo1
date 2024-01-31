@@ -1,5 +1,32 @@
 ﻿@extends('layouts.app')
 @section('title', 'History')
+@section('head')
+    <style>
+        table {
+            width: 100% !important;
+        }
+
+        tbody>tr {
+            height: 60px !important;
+        }
+
+        tbody>tr td:first-child {
+            width: 30% !important;
+            vertical-align: text-top;
+        }
+
+        @media screen and (max-width: 480px) {
+            tbody>tr td:first-child {
+                width: 40% !important;
+                vertical-align: text-top;
+            }
+
+            tbody>tr td {
+                padding: 15px 0 !important;
+            }
+        }
+    </style>
+@endsection
 @section('main')
     <div class="about_bg3" style="background: url(/assets/images/history2.png) center top no-repeat;background-size:cover;">
         <div class="about_t3  anim anim-1">History</div>

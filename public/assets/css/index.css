@@ -478,7 +478,7 @@
 .i_about {
     padding-bottom: 2%;
     overflow: hidden;
-    background: url(../images/i_about_bg_new.jpg) #c81c2d center top no-repeat;
+    background: url(../images/i_about_bg_new.jpg) #052754 center top no-repeat;
     background-size: cover;
 }
 
@@ -494,7 +494,6 @@
     float: left;
     width: 45%;
     overflow: hidden;
-    margin-top: 2%;
 }
 
 .i_about .imgs img {
@@ -516,7 +515,6 @@
     font-size: 14px;
     line-height: 30px;
     margin-right: 2.5%;
-    padding-top: 4%;
 }
 
 .i_about .i_about_r .i_about_t2 {
