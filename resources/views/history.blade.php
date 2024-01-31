@@ -9,10 +9,12 @@
         tbody>tr {
             height: 60px !important;
         }
+        tbody>tr td {
+            vertical-align: text-top;
+        }
 
         tbody>tr td:first-child {
             width: 30% !important;
-            vertical-align: text-top;
         }
 
         tbody>tr td:nth-child(2)::before {
@@ -23,7 +25,6 @@
         @media screen and (max-width: 480px) {
             tbody>tr td:first-child {
                 width: 40% !important;
-                vertical-align: text-top;
             }
 
             tbody>tr td {
