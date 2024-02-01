@@ -208,7 +208,7 @@
             </div>
             <div class="i_about_r anim anim-3">
                 <div class="i_about_txt">
-                    <h2>A Global Supplier for Railway Rail Grinding</h2>
+                    <h2 class="mb-1">A Global Supplier for Railway Rail Grinding</h2>
                     <h3 class="mb-1">Expert in Rail Grinding, Rail Grinder Overhaul & Rail Measurement.</h3>
                     <p class="mb-1" >Welcome to Rail Work, your premier global supplier for railway rail grinding solutions. With a commitment to excellence and a wealth of expertise, we specialize in three key areas: Rail Grinding, Rail Grinder Overhaul, and Rail Measurement. At Rail Work Ltd., we take pride in delivering professional services that ensure the optimal performance and safety of metro systems and high-speed rail (HSR) networks.</p>
                     <p class="mb-1">
