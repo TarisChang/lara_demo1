@@ -18,6 +18,14 @@
             border: 1px solid lightgrey;
             margin-right: 1rem;
         }
+
+        .w-25 {
+            width: 25%
+        }
+
+        .w-50 {
+            width: 50%
+        }
     </style>
 @endsection
 @section('main')
@@ -25,7 +33,7 @@
         <div class="about_t3  anim anim-1">Contact Us</div>
         <div class="contact_con anim anim-2">
             <ul>
-                <li style="width: 25%">
+                <li  class="w-25">
                     <a href="tel:0755-82968506">
                         <i class="fa-solid fa-phone"></i>
                         <div>
@@ -34,13 +42,13 @@
                         </div>
                     </a>
                 </li>
-                <li style="width: 25%"><a href="mailto:{{ $global['email'] ?? '' }}">
+                <li class="w-25"><a href="mailto:{{ $global['email'] ?? '' }}">
                         <i class="fa-solid fa-envelope"></i>
                         <div>
                             <h2>E-mail</h2>{{ $global['email'] ?? '' }}
                         </div>
                     </a></li>
-                <li style="width: 40%">
+                <li class="w-50">
                     <a href="https://maps.app.goo.gl/2MVpKTKjCZXciC4b9" target="_blank" rel="noopener noreferrer">
                         <i class="fa-solid fa-location-dot"></i>
                         <div>
