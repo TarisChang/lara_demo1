@@ -51,7 +51,7 @@
                 <li class="w-50">
                     <a href="https://maps.app.goo.gl/2MVpKTKjCZXciC4b9" target="_blank" rel="noopener noreferrer">
                         <i class="fa-solid fa-location-dot"></i>
-                        <div>
+                        <div style="max-width:60%">
                             <h2>Address</h2>
                             {{ $global['address'] ?? '' }}
                         </div>
