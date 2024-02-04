@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="@yield('description')">
-    <meta name="keywords" content="@yield('keywords')">
+    <meta name="description" content="@yield('description', 'Rail Work Ltd., A Global Supplier for Railway Rail Grinding. Expert in Rail Grinding, Rail Grinder Overhaul & Rail Measurement. We are dedicated to setting new standards in rail maintenance. Experience the difference with our professional services designed to elevate the performance and safety of metro systems and high-speed rail networks.')">
+    <meta name="keywords" content="@yield('keywords', 'rail grinding, track grinding, rail measurement, grinder overhaul, hasrco grinder, rail work, rail profile, rail corrugation, 鋼軌研磨車, 磨軌車, 打磨車, 磨軌, 鋼軌量測, 波狀磨耗')">
 
     <title>@yield('title')｜{{ $global['name'] ?? '' }}</title>
     
