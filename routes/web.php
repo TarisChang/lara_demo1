@@ -28,6 +28,6 @@ Route::middleware(['global'])->group(function () {
     Route::get('/join-us', [FrontController::class, 'join'])->name('join'); //加入我們
 });
 
-// Route::fallback(function () {
-//     return redirect()->route('home');
-// });
+Route::fallback(function () {
+    return redirect()->route('home');
+});
